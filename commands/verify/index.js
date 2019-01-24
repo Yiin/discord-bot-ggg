@@ -72,7 +72,11 @@ function verify({ args, message }) {
                         })
                         .write();
 
-                    message.reply('patvirtinimas pavyko! :)');
+                    if (author.username === 'apolas') {
+                        message.reply('tu mldc! :)');
+                    } else {
+                        message.reply('patvirtinimas pavyko! :)');
+                    }
                 } else {
                     message.reply('profilio nuotrauka nesutampa su prašoma uždėti.');
                 }
